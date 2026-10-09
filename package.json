@@ -1,0 +1,13 @@
+{
+  "name": "agentcanary",
+  "version": "0.2.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "description": "Local-first context telemetry and preflight for AI agents",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test",
+    "demo": "node scripts/demo.mjs"
+  }
+}
