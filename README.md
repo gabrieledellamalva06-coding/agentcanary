@@ -1,4 +1,9 @@
-# AgentCanary — Context Firewall & Action Gate
+# AgentCanary — Local-first Context Observability
+
+![AgentCanary architecture](docs/architecture.svg)
+
+[![Node.js tests](https://github.com/gabrieledellamalva06-coding/agentcanary/actions/workflows/ci.yml/badge.svg)](https://github.com/gabrieledellamalva06-coding/agentcanary/actions/workflows/ci.yml)
+
 
 **Local-first context observability for agent toolchains. Alpha / proof of concept.**
 
@@ -52,6 +57,16 @@ Returns current and projected **ranges**, plus `allow`, `optimize_with_rag` or `
 - v0.2d — context composition/waste audit: **planned**
 - v0.3 — CanarySidecar action/permission telemetry: **planned**
 
-## License
+## Project status & license
 
-MIT; see LICENSE. Contributions welcome via GitHub issues and small PRs with tests.
+This repository is an **alpha proof of concept**, not a complete MCP firewall, security boundary, or production-ready integration. The diagram distinguishes current capabilities from planned features.
+
+**Licensing:** No open-source license is currently granted in this repository. The author retains copyright; public availability is not permission to reuse, redistribute, or commercialize this code. Contributions should be discussed in an issue before proposing changes. An explicit license may be added later.
+
+## For contributors and reviewers
+
+- Run `npm test` to execute the dependency-free unit tests.
+- Run `npm start`, then `npm run demo` in a second terminal; open `http://127.0.0.1:4318` for the local UI.
+- Do not interpret heuristic token ranges as provider measurements.
+- Do not expose the localhost telemetry endpoint directly to the internet.
+
